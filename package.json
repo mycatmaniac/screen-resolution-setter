@@ -1,6 +1,6 @@
 {
   "name": "screen-resolution-setter",
-  "version": "1.0.9",
+  "version": "1.0.11",
   "description": "Use this package to change screen resolution for windows/linux/macOS",
   "main": "index.js",
   "scripts": {
