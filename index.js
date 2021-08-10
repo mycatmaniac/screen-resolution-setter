@@ -11,7 +11,7 @@ module.exports.setResolution = function(width, height) {
             reject(new Error("Resolution height is required"));
         }
 
-        exec(`python ${__dirname}\\resolution.py ${width} ${height}`, {windowsHide: true}, (error, stdout, stderr) => {
+        execFile(`${__dirname}\\bin\\win32\\resolution.exe`, [width, height], {windowsHide: true}, (error, stdout, stderr) => {
             if (error) {
                 reject(error);
             }
